@@ -1,0 +1,86 @@
+/* 
+Glassmorphism design taken from 
+https://codepen.io/Lubna/pen/gOwWWNB?editors=1100 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  /*   background-color: #1e0555; */
+  background: url("https://res.cloudinary.com/teja54/image/upload/v1622089216/HggUPGx_qsdxkr.jpg")
+    center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f1f5f8;
+}
+
+body,
+.quote-input {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.wrapper {
+  width: 700px;
+  max-width: 90%;
+}
+.container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.quote-display {
+  margin-bottom: 1rem;
+  margin-left: calc(1rem + 2px);
+  margin-right: calc(1rem + 2px);
+  font-size: 1.3rem;
+}
+.quote-input {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  width: 100%;
+  height: 8rem;
+  margin: auto;
+  resize: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+}
+.quote-input:focus {
+  border-color: black;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
+h2 {
+  color: #000;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#timer {
+  color: #000;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
