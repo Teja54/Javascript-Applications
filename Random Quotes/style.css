@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #6ec8c7;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  font-size: 4rem;
+  padding: 1rem 0 2rem 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+}
+#quote-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 100px 40px;
+  position: relative;
+  width: 600px;
+  margin: 2rem auto;
+}
+#quote-left,
+#quote-right {
+  font-size: 3em;
+  position: absolute;
+}
+#quote-left {
+  top: 20px;
+  left: 20px;
+}
+#quote-right {
+  bottom: 20px;
+  right: 20px;
+}
+#quote {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#author {
+  position: absolute;
+  font-size: 1.1em;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 30px;
+}
+.copy {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.copy:hover {
+  opacity: 0.5;
+}
+.alertBox {
+  background: #fff;
+  padding: 1rem 2rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s linear;
+  transform: translatex(100%);
+}
+.alertBox.active {
+  transform: translatex(0);
+}
+@media (max-width: 650px) {
+  body {
+    display: block;
+  }
+  #quote-box {
+    width: 100%;
+  }
+  .content {
+    padding: 0 2rem;
+  }
+}
