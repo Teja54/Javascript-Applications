@@ -74,7 +74,7 @@ body {
 }
 
 .action-btn {
-  background-color: #fff;
+  background-color: transparent;
   border: 0;
   cursor: pointer;
   font-size: 20px;
@@ -128,4 +128,19 @@ body {
 
 #title {
   text-transform: capitalize;
+}
+
+@media (max-width: 450px) {
+  .music-container {
+    max-width: 450px;
+    width: 90%;
+  }
+  .navigation {
+    justify-content: space-between;
+    width: 60%;
+  }
+  .action-btn {
+    padding: 5px;
+    margin: 0;
+  }
 }
